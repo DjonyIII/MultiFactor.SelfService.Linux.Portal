@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+
+	<Environment>production</Environment>
+
+	<Logging>
+		<LogLevel>
+			<Default>Information</Default>
+			<Microsoft>Warning</Microsoft>
+		</LogLevel>
+	</Logging>
+	<AllowedHosts>*</AllowedHosts>
+
+	<PortalSettings>
+
+		<CompanySettings>
+			<Name>ACME</Name>
+			<Domain>ldaps://dc.domain.local/dc=domain,dc=local</Domain>
+			<LogoUrl>images/logo.svg</LogoUrl>
+		</CompanySettings>
+
+		<TechnicalAccountSettings>
+			<User>user</User>
+			<Password>password</Password>
+		</TechnicalAccountSettings>
+
+		<ActiveDirectorySettings>
+			<!--<SecondFactorGroup>2FA Users</SecondFactorGroup>-->
+			<!--<UseUserPhone>true</UseUserPhone>-->
+			<!--<UseMobileUserPhone>true</UseMobileUserPhone>-->
+		</ActiveDirectorySettings>
+
+		<MultiFactorApiSettings>
+			<ApiUrl>https://api.multifactor.ru</ApiUrl>
+			<ApiKey>key</ApiKey>
+			<ApiSecret>secret</ApiSecret>
+			<!--<ApiProxy>http://proxy:3128</ApiProxy>-->
+		</MultiFactorApiSettings>
+
+		<GoogleReCaptchaSettings>
+			<Enabled>false</Enabled>
+			<Key>site key</Key>
+			<Secret>secret</Secret>
+		</GoogleReCaptchaSettings>
+
+		<!--<RequiresUserPrincipalName>true</RequiresUserPrincipalName>-->
+
+		<!--<LoggingLevel>Info</LoggingLevel>-->
+		<!--<LoggingFormat>json</LoggingFormat>-->
+
+		<EnablePasswordManagement>true</EnablePasswordManagement>
+		<EnableExchangeActiveSyncDevicesManagement>false</EnableExchangeActiveSyncDevicesManagement>
+
+		<!--Syslog format: RFC3164 or RFC5424-->
+		<!--<SyslogFormat>RFC5424</SyslogFormat>-->
+		<!--<SyslogFacility>Auth</SyslogFacility>-->
+		<!--<SyslogAppName>multifactor-portal</SyslogAppName>-->
+
+		<!--<UICulture>auto:en</UICulture>-->
+	</PortalSettings>
+
+</configuration>
